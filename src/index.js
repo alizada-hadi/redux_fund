@@ -1,8 +1,7 @@
 import store from './store'
-import { bugAdded, bugRmoved, resolve_bugs } from './actions'
-store.dispatch(bugAdded("something cool"))
 
+import { projectAdded } from './reducer'
 
-store.dispatch(resolve_bugs(1))
+store.dispatch(projectAdded({name : "Django react and redux core project "}))
 
 console.log(store.getState());
